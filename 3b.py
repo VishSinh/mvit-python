@@ -1,0 +1,5 @@
+str_1 = input("Enter String 1: ")
+str_2 = input("Enter String 2: ")
+match_count = sum(1 for a, b in zip(str_1, str_2) if a == b)
+max_length = max(len(str_1), len(str_2))
+print(f"The similarity between the two strings is {match_count / max_length}")
